@@ -1,0 +1,395 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    width: 100%;
+}
+.nave-option{
+    flex-basis:60%;
+    height: 5vh;
+    align-self: center;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    height: 4vh;
+}
+li{
+    align-self: center;
+    display: flex;
+}
+.logo-name{
+    align-self: center;
+    
+}
+.lo{
+    display: none;
+}
+.nave-option-sec{
+    display: none;
+}
+
+
+/*virtual*/
+
+.virtual-care{
+    display: flex;
+    justify-content: space-around;
+}
+.virtual-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    align-items: center;
+}
+
+/*2*/
+.virtual-info-2
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    align-items: center;
+  order: 2;
+}
+.virtual-info-2 h2{
+    font-size: 3rem;
+    width: 60%;
+}
+.virtual-info-2 p{
+    width: 60%;
+}
+/*2*/
+
+.virtual-info h2{
+    width: 60%;
+    font-size: 7vh;
+}
+.virtual-info p{
+    width: 60%;
+}
+.virtual-image img{
+  height: auto;
+  width: 80%;   
+}
+.consult-btn{
+    padding: 15px;
+    border-radius: 30px;
+    color: white;
+    border: 0px;
+    background-color: rgb(131, 131, 248);
+}
+.virtual-image{
+    display: flex;
+    justify-content: center;
+}
+
+/*sercies*/
+.servies-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2vh;
+    gap: 1vh;
+}
+.servies-info h1:hover {
+    border-bottom: 4px solid ;
+}
+
+/*container service*/
+
+.servies-containers{
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.container-first{
+    display: flex;
+    flex-direction: column;
+    width: 25.01%;
+    height: 45%;
+    gap: 2vh;
+    box-shadow: 1px 2px 5px 2px gray;
+}
+.container-first img{
+    height: auto;
+    width: 25%;
+}
+.container-first p{
+    width: 75%;
+}
+/*btn*/
+.more{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.more-btn,.consult-btn-2,.consult-btn-3{
+    padding: 18px;
+    border-radius: 30px;
+    color: rgb(160, 160, 230);
+    border: 0px;
+
+    background-color: white;
+    border: 2px solid rgb(142, 142, 228);;
+}
+
+
+/*person*/
+.person{
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    color: white;
+}
+.h{
+   margin-top: 5vh;
+}
+.person-details{
+    width: 60%;
+    background-color: rgb(140, 140, 248);
+    border-radius: 8px;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8vh;
+}
+.person-details h1{
+    flex-basis: 100%;
+    align-self: center;
+    border: 2px solid;
+    
+}
+.person-details img{
+    height: auto;
+    width: 12%;
+}
+.check{
+    display: flex;
+    justify-content: space-evenly;
+}
+.check p{
+    width: 50%;
+}
+.check h3{
+    align-self: center;
+}
+/**/
+.dot{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+/**/
+.article{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    margin-top: 40px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container-details{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    background-color: white;
+    border: 2px solid white;
+    box-shadow: 1px 2px 5px 2px gray;
+    border-radius:5px ;
+}
+.container-details{
+    height: auto;
+    width: 30%;
+}
+
+.btnn{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.btnn button{
+    color: blue;
+    border: 2px solid blue;
+    background-color: white;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    font-size: 3vh;
+    
+}
+
+/*footer*/
+
+.footer{
+ display: flex;
+ margin-top: 50px;
+ justify-content: center;
+ height: 50vh;
+ background-color: rgb(167, 167, 250);
+}
+.company-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+}
+.about,.region,.help{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+gap: 3vh;
+}
+.company-info img{
+    height: auto;
+    width: 30%;
+}
+.company-info p {
+  width: 80%;
+  font-size:1rem;
+}
+/**/
+
+@media only screen and (max-width: 600px) {
+     .nave-option{
+        display: none;
+    } 
+    .lo{
+        display: block;
+        height: 50px;
+        margin: 30px;
+    }
+    .lo:hover .nave-option-sec{
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        padding: 20px;
+        height: 200px;
+        background-color: red;
+    }
+    .nave-option-sec ul  {
+        margin-top: 50px;
+       display: flex;
+       flex-direction: column;
+       z-index: 1;
+    }
+  .lo:hover img{
+            display: none;
+          }
+/*vir*/
+.virtual-care{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.virtual-info h2{
+    font-size:4vh ;
+    width: 80%;
+}
+.virtual-info p{
+    font-size:2vh ;
+    width: 80%;
+}
+.virtual-info{
+    width: 100%;
+}
+.virtual-care{
+    flex-direction: column-reverse;
+}
+/**/
+.container-first{
+    width: 70%;
+    box-shadow: 1px 2px 5px 5px gray;
+    align-items: center;
+}    
+.servies-containers{
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+     gap: 2vh;
+     margin-top: 20px;   
+}
+.more-btn,.consult-btn-2,.consult-btn-3{
+    padding: 8px;
+}
+/**/
+.virtual-info-2 h2{
+    font-size: 2rem;
+    width: 80%;
+}
+.virtual-info-2 p{
+    width: 60%;
+}
+.virtual-info-2{
+    order: 0;
+    width: 100%;
+}
+.person{
+    height: 40%;
+    width: 100%;
+}
+.person-details img{
+    height: 24%;
+    width: 80px;
+    align-self: center;
+}
+.check{
+    flex-direction: column;
+}
+.check p{
+    font-size: 1rem;
+    width: 100%;
+}
+.person-details{
+    gap: 1vh;
+}
+
+/**/
+.container{
+    flex-direction: column;
+    gap: 1vh;
+}
+.container-details{
+    width: 100%;
+}
+/**/
+.about,.region ,.company-info,.help {
+    width: 100%;
+}
+.about h2,.region h2,.help h2{
+    font-size: 1rem;
+}
+.company-info p{
+    width: 50%;
+}.company-info{
+    align-items: center;
+}
+.company-info img{
+    width: 50%;
+}
+.company-info p ,.company-info span{
+    font-size: .7rem;
+}
+.footer{
+    flex-direction: column;
+    gap: 5vh;
+    height: 100%;
+}
+  }
